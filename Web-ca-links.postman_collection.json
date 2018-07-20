@@ -1,0 +1,35 @@
+{
+	"info": {
+		"_postman_id": "510d9329-e64a-21d7-f5f6-cae72a68b199",
+		"name": "Web-ca-links",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Lista alla (ev.) index för web-ca-links",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "{{appesg2}}/_cat/indices/*web-ca-links*?v",
+					"host": [
+						"{{appesg2}}"
+					],
+					"path": [
+						"_cat",
+						"indices",
+						"*web-ca-links*"
+					],
+					"query": [
+						{
+							"key": "v",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

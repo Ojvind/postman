@@ -1,0 +1,358 @@
+{
+	"info": {
+		"_postman_id": "8598eec2-f6ca-ed67-d2a1-62f6d988f4e3",
+		"name": "Featuretoggle API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get all toogles Charterflow",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;",
+							"",
+							"if(responseCode.code === 200)",
+							"{",
+							"    tests[\"Response time is less than 1000ms\"] = responseTime < 1000;",
+							"    tests[\"has no internal links\"] = !responseBody.has(\"customerapi\") || !responseBody.has(\"tripapi\");",
+							"  var data = JSON.parse(responseBody);",
+							"    tests[\"Response contains new token\"] = data.token !== null;",
+							"    postman.setEnvironmentVariable(\"token\", data.token);",
+							"}",
+							"",
+							"",
+							"",
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "tc-api-key",
+						"value": "{{apikey}}"
+					},
+					{
+						"key": "tcne-api-key",
+						"value": "{{apikey}}"
+					},
+					{
+						"key": "Authorization",
+						"value": "{{token}}"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "refreshToken",
+							"value": "{{refreshToken}}",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{toggles}}/api/v1/env/{{env}}/app/charterflow",
+					"host": [
+						"{{toggles}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"env",
+						"{{env}}",
+						"app",
+						"charterflow"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Set filter=on on Charterflow",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;",
+							"",
+							"if(responseCode.code === 200)",
+							"{",
+							"    tests[\"Response time is less than 1000ms\"] = responseTime < 1000;",
+							"    tests[\"has no internal links\"] = !responseBody.has(\"customerapi\") || !responseBody.has(\"tripapi\");",
+							"  var data = JSON.parse(responseBody);",
+							"    tests[\"Response contains new token\"] = data.token !== null;",
+							"    postman.setEnvironmentVariable(\"token\", data.token);",
+							"}",
+							"",
+							"",
+							"",
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "tc-api-key",
+						"value": "{{apikey}}"
+					},
+					{
+						"key": "tcne-api-key",
+						"value": "{{apikey}}"
+					},
+					{
+						"key": "Authorization",
+						"value": "{{token}}"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"filter\": \"on\"\n}"
+				},
+				"url": {
+					"raw": "{{toggles}}/api/v1/env/{{env}}/app/charterflow/toggles/",
+					"host": [
+						"{{toggles}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"env",
+						"{{env}}",
+						"app",
+						"charterflow",
+						"toggles",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Set filter=off on Charterflow",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;",
+							"",
+							"if(responseCode.code === 200)",
+							"{",
+							"    tests[\"Response time is less than 1000ms\"] = responseTime < 1000;",
+							"    tests[\"has no internal links\"] = !responseBody.has(\"customerapi\") || !responseBody.has(\"tripapi\");",
+							"  var data = JSON.parse(responseBody);",
+							"    tests[\"Response contains new token\"] = data.token !== null;",
+							"    postman.setEnvironmentVariable(\"token\", data.token);",
+							"}",
+							"",
+							"",
+							"",
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "tc-api-key",
+						"value": "{{apikey}}"
+					},
+					{
+						"key": "tcne-api-key",
+						"value": "{{apikey}}"
+					},
+					{
+						"key": "Authorization",
+						"value": "{{token}}"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"filter\": \"off\"\n}\n\n"
+				},
+				"url": {
+					"raw": "{{toggles}}/api/v1/env/{{env}}/app/charterflow/toggles/",
+					"host": [
+						"{{toggles}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"env",
+						"{{env}}",
+						"app",
+						"charterflow",
+						"toggles",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Set filter=hasall on Charterflow",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;",
+							"",
+							"if(responseCode.code === 200)",
+							"{",
+							"    tests[\"Response time is less than 1000ms\"] = responseTime < 1000;",
+							"    tests[\"has no internal links\"] = !responseBody.has(\"customerapi\") || !responseBody.has(\"tripapi\");",
+							"  var data = JSON.parse(responseBody);",
+							"    tests[\"Response contains new token\"] = data.token !== null;",
+							"    postman.setEnvironmentVariable(\"token\", data.token);",
+							"}",
+							"",
+							"",
+							"",
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "tc-api-key",
+						"value": "{{apikey}}"
+					},
+					{
+						"key": "tcne-api-key",
+						"value": "{{apikey}}"
+					},
+					{
+						"key": "Authorization",
+						"value": "{{token}}"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"filter\": \"hasall\"\n}\n\n"
+				},
+				"url": {
+					"raw": "{{toggles}}/api/v1/env/{{env}}/app/charterflow/toggles/",
+					"host": [
+						"{{toggles}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"env",
+						"{{env}}",
+						"app",
+						"charterflow",
+						"toggles",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Set filter=resort on Charterflow",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;",
+							"",
+							"if(responseCode.code === 200)",
+							"{",
+							"    tests[\"Response time is less than 1000ms\"] = responseTime < 1000;",
+							"    tests[\"has no internal links\"] = !responseBody.has(\"customerapi\") || !responseBody.has(\"tripapi\");",
+							"  var data = JSON.parse(responseBody);",
+							"    tests[\"Response contains new token\"] = data.token !== null;",
+							"    postman.setEnvironmentVariable(\"token\", data.token);",
+							"}",
+							"",
+							"",
+							"",
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "tc-api-key",
+						"value": "{{apikey}}"
+					},
+					{
+						"key": "tcne-api-key",
+						"value": "{{apikey}}"
+					},
+					{
+						"key": "Authorization",
+						"value": "{{token}}"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"filter\": \"resort\"\n}\n\n"
+				},
+				"url": {
+					"raw": "{{toggles}}/api/v1/env/{{env}}/app/charterflow/toggles/",
+					"host": [
+						"{{toggles}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"env",
+						"{{env}}",
+						"app",
+						"charterflow",
+						"toggles",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,35 @@
+{
+	"info": {
+		"_postman_id": "c42f371b-ab74-681c-134f-2c605451b659",
+		"name": "Charterflow",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "List all logindexes for Charterflow",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "{{loges}}/_cat/indices/*charter*?v",
+					"host": [
+						"{{loges}}"
+					],
+					"path": [
+						"_cat",
+						"indices",
+						"*charter*"
+					],
+					"query": [
+						{
+							"key": "v",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

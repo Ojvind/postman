@@ -1,0 +1,58 @@
+{
+	"info": {
+		"_postman_id": "06409f92-b7ca-ebd3-a1e7-8991541974ab",
+		"name": "Faq",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Filtrera med \"Title\"",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"query\": {\n    \"match\": {\n      \"title\" : \"Hur kan jag skydda min barnvagn under flygresan?\"\n    }\n  }    \n}"
+				},
+				"url": {
+					"raw": "{{appesg2}}/oneweb-faq-nanorep/_search",
+					"host": [
+						"{{appesg2}}"
+					],
+					"path": [
+						"oneweb-faq-nanorep",
+						"_search"
+					]
+				},
+				"description": "Leta efter specifika frågor med Title som parameter"
+			},
+			"response": []
+		},
+		{
+			"name": "Lista index för faq",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "{{appesg2}}/_cat/indices/*faq*?v",
+					"host": [
+						"{{appesg2}}"
+					],
+					"path": [
+						"_cat",
+						"indices",
+						"*faq*"
+					],
+					"query": [
+						{
+							"key": "v",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,113 @@
+{
+	"info": {
+		"_postman_id": "a3086089-e4f9-5cf5-f220-26e742587ce1",
+		"name": "Origo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": " combinationResorts --> resortPeriod",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Origin",
+						"value": "http://origo.acctest.int"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-US,en;q=0.9,sv;q=0.8,nb;q=0.7,da;q=0.6,fi;q=0.5"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Referer",
+						"value": "http://origo.acctest.int/?query=query%20%7B%0A%20%20combinationResorts(%0A%20%20%20%20key%3A%20%22f4ea420%3AMVl8SDQ5aSticlhZa3RlOzpvIkN8aml3YzI5fTE5MnRtcmVeXFJoZnA5aEtZY3s3Ozc5YnI2OGBpe21jbGRSMFx5TjI4ailncFhebnZlOTlpK0B9bmpyYjI0czE5M3BtcmVfXFJpZ3E8b0xTZXk2OTQ6YHEyOmBteW1lbW5bM19%2FTTc5ayxgd1peanRmPT9pK0B8bmpzZTMxdDc7MnRvcGVeW1BpYHU6bEtZY3s2Ozc5Y3I2OGZpe2xlbWxbNlt9TTI6bi5je11caXRgOzFtKUB5bWhyZTUzdDM6MHRvcmdeXldrYHI%2BaklfYXs3OTU4Y3A1PmVpe21sbWxaN1t9TTE7aSxkcVpYanBhOz5tKEd%2FbmpzZzI3cTAwNHdmdmdeXVNqZnA6bkZYans1MDA7ZnU1P21ofW1nb21ZMF90TjA%2FaiVkcV9WanNtOjlqKUN%2BZWhyZjEzdDM5MXNncWJYXVRrYnI5a0xSYXgxPTU4YXc1P2dofGtmaWpZM1p%2BTjExaihlcV9aan1hOzBvKEJ%2Fb25yZjY4dzEwMX1qcGVeW1BpYXY7aU9YYHIzOzc7YHI2OWZpe2xlbWxbN1p6TTU%2Bby5gclhcaXVtOzFiKUB4aGhyZTAyfDU7MnRocGVfWlBpYHI7aU9aYHk%2FOjExYnA2P2dremVmZ2VZM1h9TzY5bC9melpeaHdmPz1pK0F4bmpyYzMxdTo7MnRocGVeWlFuYHE9aExZangwMDU4YHY0OWRjeGVsbWxaM1t9TTM6byRiclldanNjOjlqLkJ5bW5wZTA4djM4M3ZvcmBcXlNpYnI5aExcY3gzMDQ6aXMwP2ZjfW9lb2lZM1h7TzY4aS5gcl9dYHBnODlqKUB4aGhyZTYycjc7MnVvcGVdXlFuYHEwbkxSYXg0MDQxZXI2OWBpe2xhbWxbMFp6RDUxby5gcl9dYXJmPzlpK0BwbmpzYTMxdDQ7MnRrcWdYXVZtY3U%2FaklbYXs3PTQ9aHMyOGZjfW5sZm9SMFt9TjU7aS1jcV9WanJsOjlrKkNwbmhyZDgzdDI4MX1ocGVfXlFuaHA5aEZYZHM1MDM7aXc1MWRofWlmZmlYNlB%2FTTc4ayxgc1tXbHZlOT9oLkh6ZW1xbDIyfTc6O3NtcmVfXVtqY3Q6a09aank2OT47aXM1MGFofWRmaWlYO1F%2BRDE6byVjdV9dYXJnODhtKUB4ZWl1bDI4cTAwO3ZvcmZdWFNqZns7aU5dYH03Oj4%2FY3kxOmxueGhsbG5dMF19TjEwai5pcVFca3RkODtrK0R7bGp2ZzEwcDE5MnRtcmVfXVVgY3o%2Fa09bZHg%2BPzQ%2FYA%3D%3D%22%0A%20%20%09)%0A%20%20%7B%0A%09%09resortPeriod%20%7B%0A%20%20%20%20%20%20periodName%0A%20%20%20%20%20%20resortOffer%7B%0A%20%20%20%20%20%20%20%20name%0A%20%20%20%20%20%20%20%20resortKey%0A%20%20%20%20%20%20%20%20providerKeys%0A%20%20%20%20%20%20%20%20_links%0A%20%20%20%20%20%20%7D%0A%09%09%7D%0A%20%20%7D%0A%7D%0A"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"query\":\"query {\\n  combinationResorts(\\n    key: \\\"f4ea420:MVl8SDQ5aSticlhZa3RlOzpvIkN8aml3YzI5fTE5MnRtcmVeXFJoZnA5aEtZY3s3Ozc5YnI2OGBpe21jbGRSMFx5TjI4ailncFhebnZlOTlpK0B9bmpyYjI0czE5M3BtcmVfXFJpZ3E8b0xTZXk2OTQ6YHEyOmBteW1lbW5bM19/TTc5ayxgd1peanRmPT9pK0B8bmpzZTMxdDc7MnRvcGVeW1BpYHU6bEtZY3s2Ozc5Y3I2OGZpe2xlbWxbNlt9TTI6bi5je11caXRgOzFtKUB5bWhyZTUzdDM6MHRvcmdeXldrYHI+aklfYXs3OTU4Y3A1PmVpe21sbWxaN1t9TTE7aSxkcVpYanBhOz5tKEd/bmpzZzI3cTAwNHdmdmdeXVNqZnA6bkZYans1MDA7ZnU1P21ofW1nb21ZMF90TjA/aiVkcV9WanNtOjlqKUN+ZWhyZjEzdDM5MXNncWJYXVRrYnI5a0xSYXgxPTU4YXc1P2dofGtmaWpZM1p+TjExaihlcV9aan1hOzBvKEJ/b25yZjY4dzEwMX1qcGVeW1BpYXY7aU9YYHIzOzc7YHI2OWZpe2xlbWxbN1p6TTU+by5gclhcaXVtOzFiKUB4aGhyZTAyfDU7MnRocGVfWlBpYHI7aU9aYHk/OjExYnA2P2dremVmZ2VZM1h9TzY5bC9melpeaHdmPz1pK0F4bmpyYzMxdTo7MnRocGVeWlFuYHE9aExZangwMDU4YHY0OWRjeGVsbWxaM1t9TTM6byRiclldanNjOjlqLkJ5bW5wZTA4djM4M3ZvcmBcXlNpYnI5aExcY3gzMDQ6aXMwP2ZjfW9lb2lZM1h7TzY4aS5gcl9dYHBnODlqKUB4aGhyZTYycjc7MnVvcGVdXlFuYHEwbkxSYXg0MDQxZXI2OWBpe2xhbWxbMFp6RDUxby5gcl9dYXJmPzlpK0BwbmpzYTMxdDQ7MnRrcWdYXVZtY3U/aklbYXs3PTQ9aHMyOGZjfW5sZm9SMFt9TjU7aS1jcV9WanJsOjlrKkNwbmhyZDgzdDI4MX1ocGVfXlFuaHA5aEZYZHM1MDM7aXc1MWRofWlmZmlYNlB/TTc4ayxgc1tXbHZlOT9oLkh6ZW1xbDIyfTc6O3NtcmVfXVtqY3Q6a09aank2OT47aXM1MGFofWRmaWlYO1F+RDE6byVjdV9dYXJnODhtKUB4ZWl1bDI4cTAwO3ZvcmZdWFNqZns7aU5dYH03Oj4/Y3kxOmxueGhsbG5dMF19TjEwai5pcVFca3RkODtrK0R7bGp2ZzEwcDE5MnRtcmVfXVVgY3o/a09bZHg+PzQ/YA==\\\"\\n  \\t)\\n  {\\n\\t\\tresortPeriod {\\n      periodName\\n      resortOffer{\\n        name\\n        resortKey\\n        providerKeys\\n        _links\\n      }\\n\\t\\t}\\n  }\\n}\\n\",\"variables\":null}"
+				},
+				"url": {
+					"raw": "{{origo}}",
+					"host": [
+						"{{origo}}"
+					]
+				},
+				"description": "Generated from a curl request: \ncurl 'http://origo.acctest.int/?' -H 'Origin: http://origo.acctest.int' -H 'Accept-Encoding: gzip, deflate' -H 'Accept-Language: en-US,en;q=0.9,sv;q=0.8,nb;q=0.7,da;q=0.6,fi;q=0.5' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36' -H 'Content-Type: application/json' -H 'Accept: application/json' -H 'Referer: http://origo.acctest.int/?query=query%20%7B%0A%20%20combinationResorts(%0A%20%20%20%20key%3A%20%22f4ea420%3AMVl8SDQ5aSticlhZa3RlOzpvIkN8aml3YzI5fTE5MnRtcmVeXFJoZnA5aEtZY3s3Ozc5YnI2OGBpe21jbGRSMFx5TjI4ailncFhebnZlOTlpK0B9bmpyYjI0czE5M3BtcmVfXFJpZ3E8b0xTZXk2OTQ6YHEyOmBteW1lbW5bM19%2FTTc5ayxgd1peanRmPT9pK0B8bmpzZTMxdDc7MnRvcGVeW1BpYHU6bEtZY3s2Ozc5Y3I2OGZpe2xlbWxbNlt9TTI6bi5je11caXRgOzFtKUB5bWhyZTUzdDM6MHRvcmdeXldrYHI%2BaklfYXs3OTU4Y3A1PmVpe21sbWxaN1t9TTE7aSxkcVpYanBhOz5tKEd%2FbmpzZzI3cTAwNHdmdmdeXVNqZnA6bkZYans1MDA7ZnU1P21ofW1nb21ZMF90TjA%2FaiVkcV9WanNtOjlqKUN%2BZWhyZjEzdDM5MXNncWJYXVRrYnI5a0xSYXgxPTU4YXc1P2dofGtmaWpZM1p%2BTjExaihlcV9aan1hOzBvKEJ%2Fb25yZjY4dzEwMX1qcGVeW1BpYXY7aU9YYHIzOzc7YHI2OWZpe2xlbWxbN1p6TTU%2Bby5gclhcaXVtOzFiKUB4aGhyZTAyfDU7MnRocGVfWlBpYHI7aU9aYHk%2FOjExYnA2P2dremVmZ2VZM1h9TzY5bC9melpeaHdmPz1pK0F4bmpyYzMxdTo7MnRocGVeWlFuYHE9aExZangwMDU4YHY0OWRjeGVsbWxaM1t9TTM6byRiclldanNjOjlqLkJ5bW5wZTA4djM4M3ZvcmBcXlNpYnI5aExcY3gzMDQ6aXMwP2ZjfW9lb2lZM1h7TzY4aS5gcl9dYHBnODlqKUB4aGhyZTYycjc7MnVvcGVdXlFuYHEwbkxSYXg0MDQxZXI2OWBpe2xhbWxbMFp6RDUxby5gcl9dYXJmPzlpK0BwbmpzYTMxdDQ7MnRrcWdYXVZtY3U%2FaklbYXs3PTQ9aHMyOGZjfW5sZm9SMFt9TjU7aS1jcV9WanJsOjlrKkNwbmhyZDgzdDI4MX1ocGVfXlFuaHA5aEZYZHM1MDM7aXc1MWRofWlmZmlYNlB%2FTTc4ayxgc1tXbHZlOT9oLkh6ZW1xbDIyfTc6O3NtcmVfXVtqY3Q6a09aank2OT47aXM1MGFofWRmaWlYO1F%2BRDE6byVjdV9dYXJnODhtKUB4ZWl1bDI4cTAwO3ZvcmZdWFNqZns7aU5dYH03Oj4%2FY3kxOmxueGhsbG5dMF19TjEwai5pcVFca3RkODtrK0R7bGp2ZzEwcDE5MnRtcmVfXVVgY3o%2Fa09bZHg%2BPzQ%2FYA%3D%3D%22%0A%20%20%09)%0A%20%20%7B%0A%09%09resortPeriod%20%7B%0A%20%20%20%20%20%20periodName%0A%20%20%20%20%20%20resortOffer%7B%0A%20%20%20%20%20%20%20%20name%0A%20%20%20%20%20%20%20%20resortKey%0A%20%20%20%20%20%20%20%20providerKeys%0A%20%20%20%20%20%20%20%20_links%0A%20%20%20%20%20%20%7D%0A%09%09%7D%0A%20%20%7D%0A%7D%0A' -H 'Connection: keep-alive' --data-binary '{\\\"query\\\":\\\"query {\\n  combinationResorts(\\n    key: \\\\\"f4ea420:MVl8SDQ5aSticlhZa3RlOzpvIkN8aml3YzI5fTE5MnRtcmVeXFJoZnA5aEtZY3s3Ozc5YnI2OGBpe21jbGRSMFx5TjI4ailncFhebnZlOTlpK0B9bmpyYjI0czE5M3BtcmVfXFJpZ3E8b0xTZXk2OTQ6YHEyOmBteW1lbW5bM19/TTc5ayxgd1peanRmPT9pK0B8bmpzZTMxdDc7MnRvcGVeW1BpYHU6bEtZY3s2Ozc5Y3I2OGZpe2xlbWxbNlt9TTI6bi5je11caXRgOzFtKUB5bWhyZTUzdDM6MHRvcmdeXldrYHI+aklfYXs3OTU4Y3A1PmVpe21sbWxaN1t9TTE7aSxkcVpYanBhOz5tKEd/bmpzZzI3cTAwNHdmdmdeXVNqZnA6bkZYans1MDA7ZnU1P21ofW1nb21ZMF90TjA/aiVkcV9WanNtOjlqKUN+ZWhyZjEzdDM5MXNncWJYXVRrYnI5a0xSYXgxPTU4YXc1P2dofGtmaWpZM1p+TjExaihlcV9aan1hOzBvKEJ/b25yZjY4dzEwMX1qcGVeW1BpYXY7aU9YYHIzOzc7YHI2OWZpe2xlbWxbN1p6TTU+by5gclhcaXVtOzFiKUB4aGhyZTAyfDU7MnRocGVfWlBpYHI7aU9aYHk/OjExYnA2P2dremVmZ2VZM1h9TzY5bC9melpeaHdmPz1pK0F4bmpyYzMxdTo7MnRocGVeWlFuYHE9aExZangwMDU4YHY0OWRjeGVsbWxaM1t9TTM6byRiclldanNjOjlqLkJ5bW5wZTA4djM4M3ZvcmBcXlNpYnI5aExcY3gzMDQ6aXMwP2ZjfW9lb2lZM1h7TzY4aS5gcl9dYHBnODlqKUB4aGhyZTYycjc7MnVvcGVdXlFuYHEwbkxSYXg0MDQxZXI2OWBpe2xhbWxbMFp6RDUxby5gcl9dYXJmPzlpK0BwbmpzYTMxdDQ7MnRrcWdYXVZtY3U/aklbYXs3PTQ9aHMyOGZjfW5sZm9SMFt9TjU7aS1jcV9WanJsOjlrKkNwbmhyZDgzdDI4MX1ocGVfXlFuaHA5aEZYZHM1MDM7aXc1MWRofWlmZmlYNlB/TTc4ayxgc1tXbHZlOT9oLkh6ZW1xbDIyfTc6O3NtcmVfXVtqY3Q6a09aank2OT47aXM1MGFofWRmaWlYO1F+RDE6byVjdV9dYXJnODhtKUB4ZWl1bDI4cTAwO3ZvcmZdWFNqZns7aU5dYH03Oj4/Y3kxOmxueGhsbG5dMF19TjEwai5pcVFca3RkODtrK0R7bGp2ZzEwcDE5MnRtcmVfXVVgY3o/a09bZHg+PzQ/YA==\\\\\"\\n  \\t)\\n  {\\n\\t\\tresortPeriod {\\n      periodName\\n      resortOffer{\\n        name\\n        resortKey\\n        providerKeys\\n        _links\\n      }\\n\\t\\t}\\n  }\\n}\\n\\\",\\\"variables\\\":null}' --compressed"
+			},
+			"response": []
+		},
+		{
+			"name": "flightOffers - combinationKey",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Origin",
+						"value": "http://localhost:5000"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "deflate"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-US,en;q=0.9,sv;q=0.8,nb;q=0.7,da;q=0.6,fi;q=0.5"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Referer",
+						"value": "http://localhost:5000/?operationName=undefined&query=query%20%7B%0A%20%20combinationResorts(%0A%20%20%20%20key%3A%20%22http%3A%2F%2Fbookinghub-2.test.int%2Fapi%2Fquery%2Fresort-offers%3FTransportKey%3Dvits%257CCgJWUxIDQVJOGgNMUEEgDyoECIqSAjICMzE6AUU%253D%26TripTypes%3DCombination%26NumberOfAdults%3D2%26NumberOfChildren%3D0%26MarketUnitKey%3DVS%26TripData%3Dvits%257CGi12aXRzfENnSldVeElEUVZKT0dnTk1VRUVnRHlvRUNJcVNBaklDTXpFNkFVVT0%253D%26SessionData%3D%22%0A%20%20%09)%0A%20%20%7B%0A%09%09resortPeriod%20%7B%0A%20%20%20%20%20%20periodName%0A%20%20%20%20%20%20resortOffer%7B%0A%20%20%20%20%20%20%20%20name%0A%20%20%20%20%20%20%20%20resortKey%0A%20%20%20%20%20%20%20%20providerKeys%0A%20%20%20%20%20%20%20%20_links%0A%20%20%20%20%20%20%7D%0A%09%09%7D%0A%20%20%7D%0A%7D%0A"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"query\":\"query {\\n  flightOffers(\\n    destinationLocationQuery: \\\"MEL\\\"\\n    departureDateFrom: \\\"20171215\\\"\\n    duration: 15\\n  ) {\\n    flightOffer {\\n      combinationKey\\n    }   \\n  }\\n}\\n\",\"variables\":null,\"operationName\":\"\"}"
+				},
+				"url": {
+					"raw": "{{origo}}",
+					"host": [
+						"{{origo}}"
+					]
+				},
+				"description": "Generated from a curl request: \ncurl 'http://localhost:5000/?' -H 'Origin: http://localhost:5000' -H 'Accept-Encoding: deflate' -H 'Accept-Language: en-US,en;q=0.9,sv;q=0.8,nb;q=0.7,da;q=0.6,fi;q=0.5' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36' -H 'Content-Type: application/json' -H 'Accept: application/json' -H 'Referer: http://localhost:5000/?operationName=undefined&query=query%20%7B%0A%20%20combinationResorts(%0A%20%20%20%20key%3A%20%22http%3A%2F%2Fbookinghub-2.test.int%2Fapi%2Fquery%2Fresort-offers%3FTransportKey%3Dvits%257CCgJWUxIDQVJOGgNMUEEgDyoECIqSAjICMzE6AUU%253D%26TripTypes%3DCombination%26NumberOfAdults%3D2%26NumberOfChildren%3D0%26MarketUnitKey%3DVS%26TripData%3Dvits%257CGi12aXRzfENnSldVeElEUVZKT0dnTk1VRUVnRHlvRUNJcVNBaklDTXpFNkFVVT0%253D%26SessionData%3D%22%0A%20%20%09)%0A%20%20%7B%0A%09%09resortPeriod%20%7B%0A%20%20%20%20%20%20periodName%0A%20%20%20%20%20%20resortOffer%7B%0A%20%20%20%20%20%20%20%20name%0A%20%20%20%20%20%20%20%20resortKey%0A%20%20%20%20%20%20%20%20providerKeys%0A%20%20%20%20%20%20%20%20_links%0A%20%20%20%20%20%20%7D%0A%09%09%7D%0A%20%20%7D%0A%7D%0A' -H 'Connection: keep-alive' --data-binary '{\\\"query\\\":\\\"query {\\n  flightOffers(\\n    destinationLocationQuery: \\\\\"MEL\\\\\"\\n    departureDateFrom: \\\\\"20171215\\\\\"\\n    duration: 15\\n  ) {\\n    flightOffer {\\n      combinationKey\\n    }   \\n  }\\n}\\n\\\",\\\"variables\\\":null,\\\"operationName\\\":\\\"\\\"}' --compressed"
+			},
+			"response": []
+		}
+	]
+}

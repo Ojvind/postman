@@ -1,0 +1,283 @@
+{
+	"info": {
+		"_postman_id": "b23a6311-3a29-062c-bbfd-01768842ce0e",
+		"name": "PartnerAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Trips (v2)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "f568235a902d1ca0b037efb4f761d4ad"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "{{partnerapi}}/v2/vs/trips",
+					"host": [
+						"{{partnerapi}}"
+					],
+					"path": [
+						"v2",
+						"vs",
+						"trips"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Trips (Finn.no)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "0c1612f7a960133a165bf92ee9ee67e7"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "{{partnerapi}}/v2/vn/trips?adults=2&children=0",
+					"host": [
+						"{{partnerapi}}"
+					],
+					"path": [
+						"",
+						"v2",
+						"vn",
+						"trips"
+					],
+					"query": [
+						{
+							"key": "adults",
+							"value": "2"
+						},
+						{
+							"key": "children",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Tripsevents (v2) ",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "f568235a902d1ca0b037efb4f761d4ad"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "{{partnerapi}}/v2/vs/tripevents/2018-06-13T09:00:00.000",
+					"host": [
+						"{{partnerapi}}"
+					],
+					"path": [
+						"v2",
+						"vs",
+						"tripevents",
+						"2018-06-13T09:00:00.000"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Hotels (v1)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "f568235a902d1ca0b037efb4f761d4ad"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "{{partnerapi}}/vs/hotels/0/1",
+					"host": [
+						"{{partnerapi}}"
+					],
+					"path": [
+						"vs",
+						"hotels",
+						"0",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Hotels (v2)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "f568235a902d1ca0b037efb4f761d4ad"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "{{partnerapi}}/v2/vs/hotels",
+					"host": [
+						"{{partnerapi}}"
+					],
+					"path": [
+						"v2",
+						"vs",
+						"hotels"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Hotels (v2) -> with hotelIds",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "f568235a902d1ca0b037efb4f761d4ad"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "{{partnerapi}}/v2/vs/hotels?hotelIds=10217,10090",
+					"host": [
+						"{{partnerapi}}"
+					],
+					"path": [
+						"v2",
+						"vs",
+						"hotels"
+					],
+					"query": [
+						{
+							"key": "hotelIds",
+							"value": "10217,10090"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Hotels (v2) -> with countryId",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "f568235a902d1ca0b037efb4f761d4ad"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "{{partnerapi}}/v2/vs/hotels?countryId=78",
+					"host": [
+						"{{partnerapi}}"
+					],
+					"path": [
+						"v2",
+						"vs",
+						"hotels"
+					],
+					"query": [
+						{
+							"key": "countryId",
+							"value": "78"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Version",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "f568235a902d1ca0b037efb4f761d4ad"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "{{partnerapi}}/version",
+					"host": [
+						"{{partnerapi}}"
+					],
+					"path": [
+						"version"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DP Trips (v2)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "f568235a902d1ca0b037efb4f761d4ad"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "{{partnerapi}}/v2/vs/dptrips",
+					"host": [
+						"{{partnerapi}}"
+					],
+					"path": [
+						"v2",
+						"vs",
+						"dptrips"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DP Tripupdates (v2)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "f568235a902d1ca0b037efb4f761d4ad"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "{{partnerapi}}/v2/vs/dptripupdates/20180101",
+					"host": [
+						"{{partnerapi}}"
+					],
+					"path": [
+						"v2",
+						"vs",
+						"dptripupdates",
+						"20180101"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

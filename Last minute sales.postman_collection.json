@@ -1,0 +1,104 @@
+{
+	"info": {
+		"_postman_id": "bb49d090-cc82-78c6-f01c-ef3610a255bc",
+		"name": "Last minute sales",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Sök i lms index",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "{{appesg2}}/oneweb-lms-trips/_search",
+					"host": [
+						"{{appesg2}}"
+					],
+					"path": [
+						"oneweb-lms-trips",
+						"_search"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List all indices for LMS",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;",
+							"",
+							"if(responseCode.code === 200)",
+							"{",
+							"    tests[\"Response time is less than 1000ms\"] = responseTime < 1000;",
+							"    tests[\"has no internal links\"] = !responseBody.has(\"customerapi\") || !responseBody.has(\"tripapi\");",
+							"  var data = JSON.parse(responseBody);",
+							"    tests[\"Response contains new token\"] = data.token !== null;",
+							"    postman.setEnvironmentVariable(\"token\", data.token);",
+							"}",
+							"",
+							"",
+							"",
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "tc-api-key",
+						"value": "{{apikey}}"
+					},
+					{
+						"key": "tcne-api-key",
+						"value": "{{apikey}}"
+					},
+					{
+						"key": "Authorization",
+						"value": "{{token}}"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "refreshToken",
+							"value": "{{refreshToken}}",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{appesg2}}/_cat/indices/*lms*?v",
+					"host": [
+						"{{appesg2}}"
+					],
+					"path": [
+						"_cat",
+						"indices",
+						"*lms*"
+					],
+					"query": [
+						{
+							"key": "v",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
